@@ -5,9 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Titan+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <main>
+        <div class="container">
+            <div class="login-body active">
+                <h1>Login</h1>
+                <div class="user-input">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="username" required>
+                </div>
+                <div class="user-input">
+                    <label for="password">Password</label>
+                    <input type="password" id="login-password" placeholder="password" required>
+                    <a href="#" onclick="togglePassword(`login-password`, this)">Show Password</a>
+                </div>
+                <button class="loginBtn">Log In</button>
+                <p><a href="#" id="goToSignUp">Sign up?</a></p>
+                <div class="login-with-other">
+                    <p>Login in with other account</p>
+                    <div class="icons">
+                        <img src="images/twitter-svgrepo-com (2).svg" alt="X" id="x">
+                        <img src="images/facebook-boxed-svgrepo-com.svg" alt="facebook" id="facebook">
+                        <img src="images/gmail-svgrepo-com.svg" alt="email" id="email">
+                        <img src="images/linkedin-svgrepo-com.svg" alt="linkedIn" id="linkedIn">
+                    </div>
+                </div>
+            </div>
+            <div class="sign-in-body">
+                    <h1>Sign Up</h1>
+                    <div class="user-input">
+                        <input type="text" id="signUp-username" placeholder="Username" required>
+                    </div>
+                    <div class="user-input">
+                        <input type="text" id="signUp-email" placeholder="Email" required>
+                    </div>
+                    <div class="user-input">
+                        <input type="password" id="signup-password" placeholder="Password">
+                        <a href="#" onclick="togglePassword(`signup-password`,this)">Show Password</a>
+                    </div>
+
+                    <button id="goToLogin">Sign Up</button>
+                    <p>Sign Up with other account</p>
+                    <div class="icons">
+                        <img src="images/twitter-svgrepo-com (2).svg" alt="X" id="x">
+                        <img src="images/facebook-boxed-svgrepo-com.svg" alt="facebook" id="facebook">
+                        <img src="images/gmail-svgrepo-com.svg" alt="email" id="email">
+                        <img src="images/linkedin-svgrepo-com.svg" alt="linkedIn" id="linkedIn">
+                    </div>
+            </div>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
