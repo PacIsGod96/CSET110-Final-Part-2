@@ -21,7 +21,7 @@
                 <div class="user-input">
                     <label for="password">Password</label>
                     <input type="password" id="login-password" placeholder="password" required>
-                    <a href="#" onclick="togglePassword(`login-password`, this)">Show Password</a>
+                    <a href="#" onclick="togglePassword('login-password', this)">Show Password</a>
                 </div>
                 <button class="loginBtn">Log In</button>
                 <p><a href="#" id="goToSignUp">Sign up?</a></p>
@@ -38,17 +38,17 @@
             <div class="sign-in-body">
                     <h1>Sign Up</h1>
                     <div class="user-input">
-                        <input type="text" id="signUp-username" placeholder="Username" required>
+                        <input type="text" id="signUp-username" placeholder="Username">
                     </div>
                     <div class="user-input">
-                        <input type="text" id="signUp-email" placeholder="Email" required>
+                        <input type="text" id="signUp-email" placeholder="Email">
                     </div>
                     <div class="user-input">
                         <input type="password" id="signup-password" placeholder="Password">
-                        <a href="#" onclick="togglePassword(`signup-password`,this)">Show Password</a>
+                        <a href="#" onclick="togglePassword('signup-password',this)">Show Password</a>
                     </div>
 
-                    <button id="goToLogin">Sign Up</button>
+                    <button id="signUpBtn" >Sign Up</button>
                     <p>Sign Up with other account</p>
                     <div class="icons">
                         <img src="images/twitter-svgrepo-com (2).svg" alt="X" id="x">
@@ -59,6 +59,6 @@
             </div>
         </div>
     </main>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

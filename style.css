@@ -89,7 +89,7 @@ label{
     width: 20vh;
     height: 7vh;
     border-radius: 4vh;
-    transition: 0.3s ease-in;
+    transition: 0.2s ease-in;
 }
 .container button:hover{
     width: 22vh;
